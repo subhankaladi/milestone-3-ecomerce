@@ -16,9 +16,8 @@ const Banner = async () => {
           height={1080}
           src={urlFor(singleBanner?.image)?.url()}
           alt={singleBanner?.title}
-          className="object-cover w-full h-full sm:object-contain"
+          className="object-cover w-full h-full"
           priority
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
         />
       )}
       <div className="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-center p-4">
