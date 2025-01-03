@@ -7,7 +7,7 @@ import Logo from "./Logo";
 import { HiHeart } from "react-icons/hi";
 import SideBarCartIcon from "./SideBarCartIcon";
 
-const Header = async () => {
+const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
