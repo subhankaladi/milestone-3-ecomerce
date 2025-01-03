@@ -12,7 +12,7 @@ const Man = () => {
 
       <div className="w-full max-w-4xl h-[50vh] sm:h-[60vh] lg:h-[70vh] relative mb-8">
         <Image
-          src="/assets/man.png"  
+          src="/man.png"  
           alt="Running Man"
           layout="fill"
           objectFit="cover"
