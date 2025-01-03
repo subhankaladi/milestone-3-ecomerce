@@ -18,7 +18,7 @@ const Header = () => {
     <header className="w-full h-20 bg-white border-b-[1px] border-lightText/20 sticky top-0 z-50">
       <div className="h-full max-w-screen-xl mx-auto px-4 flex items-center justify-between gap-5 lg:gap-10">
         <Logo />
-        <nav className="hidden md:flex space-x-6 font-sans text-lg font-semibold">
+        <nav className="hidden md:flex list-none space-x-6 font-sans text-lg font-semibold">
           <li className="hover:text-blue-500"><Link href="/">Home</Link></li>
           <li className="hover:text-blue-500"><Link href="/shop">Shop</Link></li>
           <li className="hover:text-blue-500"><Link href="/cart">Cart</Link></li>
@@ -50,7 +50,7 @@ const Header = () => {
             <HiX size={30} />
           </button>
         </div>
-        <ul className="p-4 space-y-4 text-lg font-semibold">
+        <ul className="p-4 list-none space-y-4 text-lg font-semibold">
           <li className="hover:text-blue-500">
             <Link href="/" onClick={toggleSidebar}>Home</Link>
           </li>
