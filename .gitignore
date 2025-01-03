@@ -27,6 +27,11 @@ yarn-error.log*
 
 # local env files
 .env*.local
+NEXT_PUBLIC_SANITY_API_VERSION=2024-10-10
+NEXT_PUBLIC_SANITY_DATASET=production
+NEXT_PUBLIC_SANITY_PROJECT_ID=s2xmiq7y
+NEXT_AUTH_URL=http://localhost:3000/
+
 
 # vercel
 .vercel
