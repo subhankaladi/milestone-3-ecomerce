@@ -2,7 +2,6 @@
 
 import { twMerge } from "tailwind-merge";
 import { useDispatch } from "react-redux";
-import toast from "react-hot-toast";
 import { addToCart } from "@/redux/shoppersSlice";
 import { ProductData } from "../../types";
 
@@ -15,16 +14,7 @@ const AddToCartButton = ({ className, item }: Props) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    try {
-      dispatch(addToCart(item));
-      toast.success(`${item?.title.substring(12, 0)} added successfully!`);
-    } catch (error: unknown) {
-      if (error instanceof Error) {
-        toast.error(error.message);
-      } else {
-        toast.error("An unexpected error occurred.");
-      }
-    }
+    dispatch(addToCart(item));
   };
 
   return (
